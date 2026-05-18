@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auftritt Berlin | Exklusive Schuhmode</title>
+    <style>
+        :root { --beige: #fdfaf2; --braun: #5d4037; --gold: #d4bc8e; --text: #2c2c2c; --weiss: #ffffff; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Georgia', serif; background-color: var(--beige); color: var(--text); line-height: 1.6; }
+        header { background-color: var(--weiss); padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--gold); position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 2.2rem; letter-spacing: 4px; text-transform: uppercase; color: var(--braun); text-decoration: none; }
+        nav ul { list-style: none; display: flex; }
+        nav ul li { margin-left: 30px; position: relative; }
+        nav a { text-decoration: none; color: var(--text); text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; transition: 0.3s; }
+        nav a:hover { color: var(--gold); }
+        .dropdown-content { display: none; position: absolute; background-color: var(--weiss); min-width: 200px; box-shadow: 0px 8px 16px rgba(0,0,0,0.1); top: 100%; left: 0; padding: 10px 0; }
+        .dropdown:hover .dropdown-content { display: block; }
+        .dropdown-content a { padding: 10px 20px; display: block; text-transform: none; }
+        .hero { height: 70vh; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80') no-repeat center center; background-size: cover; display: flex; align-items: center; justify-content: center; color: var(--weiss); text-align: center; }
+        .hero h1 { font-size: 3.5rem; text-shadow: 2px 2px 15px rgba(0,0,0,0.6); }
+        section { padding: 80px 20px; max-width: 1100px; margin: auto; text-align: center; }
+        h2 { font-size: 2rem; text-transform: uppercase; color: var(--braun); margin-bottom: 40px; }
+        .grid { display: flex; gap: 30px; flex-wrap: wrap; justify-content: center; }
+        .card { background: var(--weiss); padding: 40px; flex: 1; min-width: 300px; border: 1px solid #eee; box-shadow: 5px 5px 0px var(--gold); }
+        footer { background-color: var(--braun); color: var(--weiss); padding: 60px 20px; text-align: center; }
+        footer a { color: var(--gold); text-decoration: none; margin: 0 15px; }
+    </style>
+</head>
+<body>
+<header>
+    <a href="index.html" class="logo">Auftritt</a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="Angebot.html">Angebot ▾</a>
+                <ul class="dropdown-content">
+                    <li><a href="Angebot.html">Schuhe</a></li>
+                    <li><a href="Angebot.html">Taschen</a></li>
+                    <li><a href="Angebot.html">Accessoires</a></li>
+                </ul>
+            </li>
+            <li><a href="ÜberUns.html">Über uns</a></li>
+            <li><a href="Anfahrt.html">Anfahrt</a></li>
+            <li><a href="Impressum.html">Impressum</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="hero"><h1>Besondere Schuhe für Berlin.</h1></div>
+<section>
+    <h2>Tradition & Moderne</h2>
+    <div class="grid">
+        <div class="card"><h3>Persönliche Beratung</h3><p>Wir nehmen uns Zeit für Ihre Bedürfnisse.</p></div>
+        <div class="card"><h3>Exklusive Marken</h3><p>Von Trippen bis Camper.</p></div>
+    </div>
+</section>
+<footer>
+    <p><strong>Auftritt Berlin</strong> | Bölschestraße 23, 1258

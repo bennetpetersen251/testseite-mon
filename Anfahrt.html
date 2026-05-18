@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Anfahrt - Auftritt Berlin</title>
+    <style>
+        :root { --beige: #fdfaf2; --braun: #5d4037; --gold: #d4bc8e; --text: #2c2c2c; --weiss: #ffffff; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Georgia', serif; background-color: var(--beige); color: var(--text); line-height: 1.6; }
+        header { background-color: var(--weiss); padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--gold); position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 2.2rem; letter-spacing: 4px; text-transform: uppercase; color: var(--braun); text-decoration: none; }
+        nav ul { list-style: none; display: flex; }
+        nav ul li { margin-left: 30px; position: relative; }
+        nav a { text-decoration: none; color: var(--text); text-transform: uppercase; font-size: 0.9rem; }
+        .dropdown-content { display: none; position: absolute; background-color: var(--weiss); min-width: 200px; box-shadow: 0px 8px 16px rgba(0,0,0,0.1); top: 100%; left: 0; padding: 10px 0; }
+        .dropdown:hover .dropdown-content { display: block; }
+
+        .container { max-width: 800px; margin: 50px auto; padding: 50px; background: var(--weiss); text-align: center; box-shadow: 10px 10px 0px var(--gold); }
+        h1 { color: var(--braun); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px; }
+        .info-box { margin: 30px 0; padding: 30px; border-top: 1px solid #eee; border-bottom: 1px solid #eee; background-color: #fafafa; }
+        h3 { color: #8d6e63; margin-bottom: 10px; text-transform: uppercase; font-size: 1rem; }
+        .btn-maps { display: inline-block; padding: 15px 35px; background: var(--braun); color: var(--weiss); text-decoration: none; font-weight: bold; margin-top: 20px; transition: 0.3s; }
+        .btn-maps:hover { background: var(--gold); color: var(--braun); }
+        footer { background-color: var(--braun); color: var(--weiss); padding: 40px; text-align: center; }
+        .back-btn { display: inline-block; padding: 12px 25px; background: var(--gold); color: var(--braun); text-decoration: none; font-weight: bold; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+<header>
+    <a href="index.html" class="logo">Auftritt</a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="Angebot.html">Angebot ▾</a>
+                <ul class="dropdown-content">
+                    <li><a href="Angebot.html">Schuhe</a></li>
+                    <li><a href="Angebot.html">Taschen</a></li>
+                    <li><a href="Angebot.html">Accessoires</a></li>
+                </ul>
+            </li>
+            <li><a href="ÜberUns.html">Über uns</a></li>
+            <li><a href="Anfahrt.html">Anfahrt</a></li>
+            <li><a href="Impressum.html">Impressum</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>So finden Sie uns</h1>
+    <p>Unser Schuhgeschäft liegt im Herzen von Berlin-Friedrichshagen, direkt in der beliebten Einkaufsstraße.</p>
+    
+    <div class="info-box">
+        <h3>Adresse</h3>
+        <p>Bölschestraße 23<br>12587 Berlin</p>
+        
+        <h3 style="margin-top: 20px;">Öffnungszeiten</h3>
+        <p>Mo – Fr: 10:00 – 18:30 Uhr<br>Sa: 10:00 – 14:00 Uhr</p>
+        
+        <h3 style="margin-top: 20px;">Anreise</h3>
+        <p>S-Bahnhof Friedrichshagen (S3), dann ca. 5 Minuten Fußweg oder eine Station mit der Tram 60/61.</p>
+    </div>
+
+    <p>Nutzen Sie Google Maps für eine detaillierte Routenplanung:</p>
+    <a href="https://www.google.com/maps/dir/?api=1&destination=Bölschestraße+23+12587+Berlin" target="_blank" class="btn-maps">📍 ROUTE JETZT PLANEN</a>
+</div>
+
+<footer>
+    <a href="index.html" class="back-btn">← ZURÜCK ZUR STARTSEITE</a>
+    <p>© 2026 Auftritt Berlin - Ivonne Petersen</p>
+</footer>
+</body>
+</html>
