@@ -25,6 +25,58 @@
         .card { background: var(--weiss); padding: 40px; flex: 1; min-width: 300px; border: 1px solid #eee; box-shadow: 5px 5px 0px var(--gold); }
         footer { background-color: var(--braun); color: var(--weiss); padding: 60px 20px; text-align: center; }
         footer a { color: var(--gold); text-decoration: none; margin: 0 15px; }
+
+        /* ==========================================================================
+           HANDY-OPTIMIERUNG (Responsive Design)
+           ========================================================================== */
+        @media screen and (max-width: 768px) {
+            header {
+                flex-direction: column; /* Logo oben, Menü darunter */
+                padding: 15px 20px;
+                gap: 15px;
+            }
+
+            .logo {
+                font-size: 1.8rem; /* Logo auf Handys leicht verkleinern */
+                letter-spacing: 2px;
+            }
+
+            nav ul {
+                flex-wrap: wrap; /* Menüpunkte brechen sauber um, falls nötig */
+                justify-content: center;
+                gap: 15px;
+            }
+
+            nav ul li {
+                margin-left: 0; /* Standard-Margin links aufheben für bessere Zentrierung */
+            }
+
+            nav a {
+                font-size: 0.8rem; /* Schriftgröße im Menü minimal anpassen */
+            }
+
+            .hero {
+                height: 50vh; /* Auf Mobilgeräten nicht ganz so riesig in der Höhe */
+                padding: 0 20px;
+            }
+
+            .hero h1 {
+                font-size: 2rem; /* Verhindert, dass der Text rechts rausrutscht */
+            }
+
+            section {
+                padding: 40px 15px; /* Weniger Abstand oben/unten auf kleinen Screens */
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                margin-bottom: 25px;
+            }
+
+            .card {
+                padding: 25px; /* Innenabstand der Boxen kompakter machen */
+            }
+        }
     </style>
 </head>
 <body>
@@ -56,4 +108,7 @@
     </div>
 </section>
 <footer>
-    <p><strong>Auftritt Berlin</strong> | Bölschestraße 23, 1258
+    <p><strong>Auftritt Berlin</strong> | Bölschestraße 23, 12587 Berlin</p>
+</footer>
+</body>
+</html>
